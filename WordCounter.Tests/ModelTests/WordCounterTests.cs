@@ -28,5 +28,23 @@ namespace WordCounter.Tests
       Counter myCounter = new Counter("hello", "hello helo Hello HElLo");
       Assert.AreEqual(3, myCounter.Count());
     }
+
+    [TestMethod]
+    public void WordCounter_InputValid_True()
+    {
+      Assert.AreEqual(true, Counter.CheckInput("hello"));
+    }
+
+    [TestMethod]
+    public void WordCounter_InputEmpty_False()
+    {
+      Assert.AreEqual(false, Counter.CheckInput(""));
+    }
+
+    [TestMethod]
+    public void WordCounter_InputNumber_False()
+    {
+      Assert.AreEqual(false, Counter.CheckInput("12"));
+    }
   }
 }
