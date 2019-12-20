@@ -6,13 +6,13 @@ namespace WordCounter.Solution
   public class Counter
   {
     public string Sentence { get; set; }
-    public string KeyWord { get; set; }
+    public static string KeyWord { get; set; }
     public Counter(string key, string sent)
     {
       Sentence = sent;
       KeyWord = key;
     }
-    public static int Setup()
+    public static string Setup()
     {
       Console.WriteLine("Please enter a search word");
       string key = Console.ReadLine();
@@ -32,10 +32,10 @@ namespace WordCounter.Solution
       }
       
       Counter myCounter = new Counter(key, sentence);
-      return myCounter.Count();
+      return "found " + key + " " + myCounter.Count() + " times";
     }
 
-    public static string CheckInput(string input)
+    public static bool CheckInput(string input)
     {
       int num;
       if(string.IsNullOrEmpty(input) || int.TryParse(input, out num))
