@@ -26,6 +26,22 @@ Github - https://github.com/WordCounter
   Enter a word, and a string, and get the number of times the word occurs returned.
     Input: cat, cat in the hat
     Output: 1
+
+  Enter a word, and a string, and get the number of times the word occurs returned. return regardless of capitals.
+    Input: cat, CaT in the hat
+    Output: 1
+
+  Enter a word, and a string, and get the number of times the word occurs returned. return regardless of capitals.
+    Input: cat, CaT in the cat hat
+    Output: 2
+
+  Enter nothing, and get a prompt to enter a word
+    Input: ""
+    Output: "Please enter a word."
+
+  Enter a number, and get a prompt to enter a word
+    Input: "12"
+    Output: "Please enter a word."
     
 
 ## Known Bugs
