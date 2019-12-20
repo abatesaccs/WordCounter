@@ -34,6 +34,17 @@ namespace WordCounter.Solution
       Counter myCounter = new Counter(key, sentence);
       return myCounter.Count();
     }
+
+    public static string CheckInput(string input)
+    {
+      int num;
+      if(string.IsNullOrEmpty(input) || int.TryParse(input, out num))
+      {
+        return false;
+      }
+      return true;
+    }
+
     public int Count()
     {
       string[] splitSentence = Sentence.ToLower().Split(',',' ','.');
