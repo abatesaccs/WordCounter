@@ -1,18 +1,18 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using .Models;
+using WordCounter.Solution;
 using System.Collections.Generic;
 
-namespace .Tests
+namespace WordCounter.Tests
 {
-    [TestClass]
-    public class Tester
+  [TestClass]
+  public class WordCounterTester
+  {
+    [TestMethod]
+    public void Test_Name_Result()
     {
-        [TestMethod]
-        public void Test_Name_Result()
-        {
-            //Test Code
-        }
- 
+      Counter myCounter = new Counter("hello", "Hello hello HeLlO helo hellllo");
+      Assert.AreEqual(3, myCounter.Count());
     }
+  }
 }
