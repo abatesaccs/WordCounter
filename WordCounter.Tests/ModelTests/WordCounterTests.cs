@@ -9,9 +9,23 @@ namespace WordCounter.Tests
   public class WordCounterTester
   {
     [TestMethod]
-    public void Test_Name_Result()
+    public void WordCounter_singleMatch_True()
     {
-      Counter myCounter = new Counter("hello", "Hello hello HeLlO helo hellllo");
+      Counter myCounter = new Counter("hello", "hello");
+      Assert.AreEqual(1, myCounter.Count());
+    }
+
+    [TestMethod]
+    public void WordCounter_singleMatchWithIncorrectWords_True()
+    {
+      Counter myCounter = new Counter("hello", "hello helo");
+      Assert.AreEqual(1, myCounter.Count());
+    }
+    
+    [TestMethod]
+    public void WordCounter_MultipleMatchWithCapitals_True()
+    {
+      Counter myCounter = new Counter("hello", "hello helo Hello HElLo");
       Assert.AreEqual(3, myCounter.Count());
     }
   }
