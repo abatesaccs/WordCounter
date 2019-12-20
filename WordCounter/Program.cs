@@ -1,7 +1,8 @@
 using System;
+using WordCounter.Models;
 using System.Collections.Generic;
 
-namespace Project.Models {
+namespace WordCounter.Models {
   public class Program{
     static void Main()
     {

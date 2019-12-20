@@ -1,12 +1,12 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Project.Models;
+using .Models;
 using System.Collections.Generic;
 
-namespace Project.Tests
+namespace .Tests
 {
     [TestClass]
-    public class ProjectTester
+    public class Tester
     {
         [TestMethod]
         public void Test_Name_Result()

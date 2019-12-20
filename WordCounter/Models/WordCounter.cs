@@ -1,13 +1,14 @@
 using System;
 using System.Collections.Generic;
 
-namespace ProjectFile.Models
+namespace WordCounter.Models
 {
-  public class Project
+  public class Counter
   {
-    public Project()
+    public Counter()
     {
       
     }
+    
   }
 }
