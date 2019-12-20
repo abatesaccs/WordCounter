@@ -1,18 +1,18 @@
-# Project
-##### By Name
-###### Created 19 December, 2019
+# Word Counter
+##### By Andrew Bates
+###### Created 20 December, 2019
 
 ## Description
 
-This project allows users to ...
+This project allows users to enter a sentence and a key word, and get the number of times the key occurs in the sentence.
 
 ## Links:
 
-Github - https://github.com/ (Name/ProjectName)
+Github - https://github.com/WordCounter
 
 ## Setup/Installation Requirements:
 
-1. Open https://github.com/ (Name/ProjectName)
+1. Open https://github.com/WordCounter
 2. Clone repository to local machine 
 3. Build and Run project
 
@@ -23,7 +23,10 @@ Github - https://github.com/ (Name/ProjectName)
 
 ### Specification
 
-  This programs allows users to ...
+  Enter a word, and a string, and get the number of times the word occurs returned.
+    Input: cat, cat in the hat
+    Output: 1
+    
 
 ## Known Bugs
 
@@ -36,7 +39,7 @@ Github - https://github.com/ (Name/ProjectName)
 
 ### License:
 
-Copyright (c) 2019 Name
+Copyright (c) 2019 Andrew Bates
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
