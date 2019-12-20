@@ -1,12 +1,12 @@
 using System;
-using WordCounter.Models;
+using WordCounter.Solution;
 using System.Collections.Generic;
 
-namespace WordCounter.Models {
+namespace WordCounter {
   public class Program{
     static void Main()
     {
-      //Code
+      Console.WriteLine(Counter.Setup());
     }
   }
 }
